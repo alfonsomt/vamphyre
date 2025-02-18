@@ -9,4 +9,10 @@ sudo ./VAMPhyRE_install.sh
 export PATH=$HOME/bin:$PATH
 ```
 
+## Uninstalling
 
+```
+sudo .~/VAMPhRE_test/uninstall.sh
+```
+
+## Usage
