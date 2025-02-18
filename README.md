@@ -16,3 +16,9 @@ sudo .~/VAMPhRE_test/uninstall.sh
 ```
 
 ## Usage
+### Show Help
+
+```
+VAMPhy.py -h
+VAMPhy.py --help
+```
