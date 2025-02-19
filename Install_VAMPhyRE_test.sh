@@ -34,6 +34,8 @@ if [ "$value" == "MACOSX" ]; then
 	mv VPS $path
 	mv scripts $path
 	mv uninstall.sh $path
+	mv datasets $path
+
 	
     rm -r *
     
@@ -55,7 +57,9 @@ elif [ "$value" == "LINUX" ]; then
 	mv VPS $path
 	mv scripts $path
 	mv uninstall.sh $path
-	
+	mv datasets $path
+
+
     rm -r *
 else
     echo "Error: only valid optios are: 'MACOSX' y 'LINUX'."
