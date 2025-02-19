@@ -68,6 +68,7 @@ options
 
 **-g**, Directory with genome files, must be in individual files in fasta format. Other formats are not allowed.
 
+###
 ### Test data
 
 In "~/VAMPhyRE_test/" path you will find a directory called "datasets" you can copy them and use for test the VAMPhyRE.py, here is an example of use:
