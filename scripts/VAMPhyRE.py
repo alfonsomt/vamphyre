@@ -32,7 +32,7 @@ VAMPhyRE_path = '~/VAMPhyRE_test/'
 inicio = time.time()
 parser = argparse.ArgumentParser()
 print('Minimal use:' + '\n' + 
-      'VAMPhy.py -p vps8 -t 8 -l 5 -r 5 -d 16 -g Genome_dir' +
+      'VAMPhyRE.py -p vps8 -t 8 -l 5 -r 5 -d 16 -g Genome_dir' +
       '\n\n')
 parser.add_argument("-p", "--PROBEFILE", type = str, default = "vps8", metavar = "",
                     help = 'VPS file (default = vps8)')

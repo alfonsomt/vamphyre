@@ -39,7 +39,7 @@ import seaborn as sns
 import argparse
 
 parser = argparse.ArgumentParser()
-print('minimal use:' + '\n' + 'ML_analysis_CVA.py -file vh_global.csv -meta metadatos.csv -clase Poblacion -RD PCA -T 8 -method MNB')
+print('minimal use:' + '\n' + 'ML-VAMPhyRE.py -f vh_global.csv -m metadatos.csv -c Poblacion -r PCA -t 8 -l MNB')
 
 parser.add_argument('-f','--file', type = str, metavar = '', 
                     help = 'vh_global.csv file')

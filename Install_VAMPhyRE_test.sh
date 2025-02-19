@@ -21,9 +21,9 @@ if [ "$value" == "MACOSX" ]; then
     mkdir -p $path
 	
 	sudo chmod +x scripts/*
-	sudo mv scripts/VAMPhy.py /usr/local/bin/
+	sudo mv scripts/VAMPhyRE.py /usr/local/bin/
 	sudo mv scripts/prepare_contigs.py /usr/local/bin/
-	sudo mv scripts/ML_analysis_CVA.py /usr/local/bin/
+	sudo mv scripts/ML-VAMPhyRE.py /usr/local/bin/
 	sudo mv bin_MACOSX/Treerename /usr/local/bin/
 	
 	mv $"bin_${mac}" bin
