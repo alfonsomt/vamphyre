@@ -25,8 +25,10 @@ export PATH=$HOME/bin:$PATH
 
 ## Uninstalling
 
+You must go to VAMPhyRE path "~/VAMPhyRE_test/" and execute the following comand:
+
 ```
-sudo .~/VAMPhRE_test/uninstall.sh
+sudo ./uninstall.sh
 ```
 
 ## Usage
