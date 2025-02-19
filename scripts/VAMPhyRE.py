@@ -385,7 +385,5 @@ vh_global.to_csv('vh_global.csv')
 final = time.time()
 t = time.strftime("%I:%M:%S")
 print("[%s] " %t , f"Execution time: {final-inicio} s")
-print('Thanks for using VAMPhyRE')
+print('Thanks for using VAMPhyRE!!!!!')
 print("Don't Forget to cite us")
-print("Don't Forget to cite us")
-
