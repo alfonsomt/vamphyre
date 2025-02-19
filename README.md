@@ -67,7 +67,7 @@ options
 In "~/VAMPhyRE_test/" path you will find a directory called "datasets" you can copy them and use for test the VAMPhyRE.py, here is an example of use:
 
 ```
-VAMPhyRE.py -p vps8 -t 8 -l 5 -r 5 -d 16 -g datasets/hpv
+VAMPhyRE.py -p vps8 -t 8 -l 5 -r 5 -d 16 -g ~/VAMPhyRE_test/datasets/hpv
 
 ```
 
