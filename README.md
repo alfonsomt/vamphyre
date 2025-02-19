@@ -15,11 +15,20 @@ Genome similarity is then estimated by pairwise comparison of their VGFs, by cou
 
 ## Installation
 
-Execute the next comands
-
+First, download the repository
 ```
-chmod +x install_VAMPhyRE.sh
-sudo ./install_VAMPhyRE.sh [LINUX|MACOSX]
+git clone https://github.com/alfonsomt/vamphyre_tests.git
+```
+
+
+Execute the next comands
+```
+cd vamphyre_test/
+chmod +x Install_VAMPhyRE_test.sh
+```
+You will need to select LINUX or MACOSX option, depending on your operative system
+```
+sudo ./Install_VAMPhyRE_test.sh [LINUX|MACOSX]
 export PATH=$HOME/bin:$PATH
 ```
 
