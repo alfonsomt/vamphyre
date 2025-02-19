@@ -23,12 +23,9 @@ git clone https://github.com/alfonsomt/vamphyre_tests.git
 
 Execute the next comands
 ```
-cd vamphyre_test/
+cd vamphyre_tests/
 chmod +x Install_VAMPhyRE_test.sh
-```
-You will need to select LINUX or MACOSX option, depending on your operative system
-```
-sudo ./Install_VAMPhyRE_test.sh [LINUX|MACOSX]
+sudo ./Install_VAMPhyRE_test.sh
 export PATH=$HOME/bin:$PATH
 ```
 
@@ -37,20 +34,20 @@ export PATH=$HOME/bin:$PATH
 You must go to VAMPhyRE path "~/VAMPhyRE_test/" and execute the following comand:
 
 ```
-sudo ./uninstall.sh
+sudo ~/VAMPhyRE_test/uninstall.sh
 ```
 
 ## Usage
 ### Show Help
 
 ```
-VAMPhy.py -h
-VAMPhy.py --help
+VAMPhyRE.py -h
+VAMPhyRE.py --help
 ```
 
 ### Usage
 ```
-VAMPhy.py -p vps8 -t 8 -l 5 -r 5 -d 16 -g genome_dir
+VAMPhyRE.py -p vps8 -t 8 -l 5 -r 5 -d 16 -g genome_dir
 ```
 options
 **-p** name of the file that contains the VPS, present in ~/VAMPhyRE/VPS/ path. You can add a file with user kmers as well. 
@@ -64,5 +61,17 @@ options
 **-d**, value of threshold.
 
 **-g**, Directory with genome files, must be in individual files in fasta format. Other formats are not allowed.
+
+### Test data
+
+In "~/VAMPhyRE_test/" path you will find a directory called "datasets" you can copy them and use for test the VAMPhyRE.py, here is an example of use:
+
+```
+VAMPhyRE.py -p vps8 -t 8 -l 5 -r 5 -d 16 -g ~/VAMPhyRE_test/datasets/hpv
+
+```
+
+
+
 
 
