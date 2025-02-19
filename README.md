@@ -24,8 +24,14 @@ git clone https://github.com/alfonsomt/vamphyre_tests.git
 Execute the next comands
 ```
 cd vamphyre_tests/
+```
+```
 chmod +x Install_VAMPhyRE_test.sh
-sudo ./Install_VAMPhyRE_test.sh
+```
+```
+./Install_VAMPhyRE_test.sh
+```
+```
 export PATH=$HOME/bin:$PATH
 ```
 
