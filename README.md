@@ -47,7 +47,7 @@ VAMPhy.py --help
 
 ### Usage
 ```
-VAMPhy.py -p vps8 -t 8 -l 5 -r 5 -d 16 -g genome_dir
+VAMPhyRE.py -p vps8 -t 8 -l 5 -r 5 -d 16 -g genome_dir
 ```
 options
 **-p** name of the file that contains the VPS, present in ~/VAMPhyRE/VPS/ path. You can add a file with user kmers as well. 
@@ -61,5 +61,17 @@ options
 **-d**, value of threshold.
 
 **-g**, Directory with genome files, must be in individual files in fasta format. Other formats are not allowed.
+
+### Test data
+
+In "~/VAMPhyRE_test/" path you will find a directory called "datasets" you can copy them and use for test the VAMPhyRE.py, here is an example of use:
+
+```
+VAMPhyRE.py -p vps8 -t 8 -l 5 -r 5 -d 16 -g datasets/hpv
+
+```
+
+
+
 
 
