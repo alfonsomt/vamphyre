@@ -19,7 +19,7 @@ Execute the next comands
 
 ```
 chmod +x VAMPhyRE_install.sh
-sudo ./VAMPhyRE_install.sh
+sudo ./install_VAMPhyRE.sh [LINUX|MACOSX]
 export PATH=$HOME/bin:$PATH
 ```
 
