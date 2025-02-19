@@ -25,10 +25,7 @@ Execute the next comands
 ```
 cd vamphyre_test/
 chmod +x Install_VAMPhyRE_test.sh
-```
-You will need to select LINUX or MACOSX option, depending on your operative system
-```
-sudo ./Install_VAMPhyRE_test.sh [LINUX|MACOSX]
+sudo ./Install_VAMPhyRE_test.sh
 export PATH=$HOME/bin:$PATH
 ```
 
