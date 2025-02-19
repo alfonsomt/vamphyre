@@ -3,21 +3,10 @@
 path=~/VAMPhyRE_test/
 mac=MACOSX
 linux=LINUX
-# Verificar que se haya pasado un argumento valido
-if [ $# -eq 0 ]; then
-    echo "Error: Must use one of following options."
-    echo "[${mac}|${linux}]"
-    exit 1
-fi
+OS=$(uname -s)
 
-# Asignar el valor pasado como argumento a una variable
-value=$1
-
-# Tomar la decisión basada en el valor
-if [ "$value" == "MACOSX" ]; then
+if [ "$OS" == "Darwin" ]; then
 	
-    echo "${mac} selected, this option is only for MAC users."
-    
     mkdir -p $path
 	
 	sudo chmod +x scripts/*
@@ -39,7 +28,9 @@ if [ "$value" == "MACOSX" ]; then
 	
     rm -r *
     
-elif [ "$value" == "LINUX" ]; then
+    echo "VAMPhyRE was installed succesfully"
+    
+elif [ "$OS" == "Linux" ]; then
     echo "${linux} selected, this option is only for any Linux distro users."
     
     mkdir -p $path
@@ -61,6 +52,8 @@ elif [ "$value" == "LINUX" ]; then
 
 
     rm -r *
+    
+    echo "VAMPhyRE was installed succesfully"
 else
     echo "Error: only valid optios are: 'MACOSX' y 'LINUX'."
     exit 1
