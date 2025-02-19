@@ -19,18 +19,19 @@ if [ "$value" == "MACOSX" ]; then
     echo "${mac} selected, this option is only for MAC users."
     
     mkdir -p $path
-
+	
+	sudo chmod +x scripts/*
 	sudo mv scripts/VAMPhy.py /usr/local/bin/
 	sudo mv scripts/prepare_contigs.py /usr/local/bin/
 	sudo mv scripts/ML_analysis_CVA.py /usr/local/bin/
 	sudo mv bin_MACOSX/Treerename /usr/local/bin/
 	
 	mv $"bin_${mac}" bin
+	sudo chmod +x bin/*
+	sudo xattr -rd com.apple.quarantine bin/*
 	mv bin $path
 	echo "${path}bin/*" 
-	chmod +x $"${path}bin/*" 
 	mv VPS $path
-	chmod +x scripts/*
 	mv scripts $path
 	mv uninstall.sh $path
 	
@@ -40,7 +41,8 @@ elif [ "$value" == "LINUX" ]; then
     echo "${linux} selected, this option is only for any Linux distro users."
     
     mkdir -p $path
-
+    
+	sudo chmod +x scripts/*
 	sudo mv scripts/VAMPhy.py /usr/local/bin/
 	sudo mv scripts/prepare_contigs.py /usr/local/bin/
 	sudo mv scripts/ML_analysis_CVA.py /usr/local/bin/
@@ -48,10 +50,9 @@ elif [ "$value" == "LINUX" ]; then
 	
 	
 	mv $"bin_${linux}" bin
+	sudo chmod +x bin/*
 	mv bin $path
-	chmod +x $"${path}bin/*"
 	mv VPS $path
-	chmod +x scripts/*
 	mv scripts $path
 	mv uninstall.sh $path
 	
