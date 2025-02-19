@@ -18,7 +18,7 @@ Genome similarity is then estimated by pairwise comparison of their VGFs, by cou
 Execute the next comands
 
 ```
-chmod +x VAMPhyRE_install.sh
+chmod +x install_VAMPhyRE.sh
 sudo ./install_VAMPhyRE.sh [LINUX|MACOSX]
 export PATH=$HOME/bin:$PATH
 ```
@@ -43,7 +43,6 @@ VAMPhy.py -p vps8 -t 8 -l 5 -r 5 -d 16 -g genome_dir
 ```
 options
 **-p** name of the file that contains the VPS, present in ~/VAMPhyRE/VPS/ path. You can add a file with user kmers as well. 
-
 
 **-t**, # number of threads.
 
