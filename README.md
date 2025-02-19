@@ -41,8 +41,8 @@ sudo ./uninstall.sh
 ### Show Help
 
 ```
-VAMPhy.py -h
-VAMPhy.py --help
+VAMPhyRE.py -h
+VAMPhyRE.py --help
 ```
 
 ### Usage
