@@ -13,7 +13,8 @@ if [ "$OS" == "Darwin" ]; then
 	sudo mv scripts/VAMPhyRE.py /usr/local/bin/
 	sudo mv scripts/prepare_contigs.py /usr/local/bin/
 	sudo mv scripts/ML-VAMPhyRE.py /usr/local/bin/
-	sudo mv bin_MACOSX/Treerename /usr/local/bin/
+	sudo mv scripts/VAMPhyRE-opt.py /usr/local/bin/
+	sudo mv $"bin_${linux}/Treerename" /usr/local/bin/
 	
 	mv $"bin_${mac}" bin
 	sudo chmod +x bin/*
@@ -37,6 +38,7 @@ elif [ "$OS" == "Linux" ]; then
 	sudo mv scripts/VAMPhyRE.py /usr/local/bin/
 	sudo mv scripts/prepare_contigs.py /usr/local/bin/
 	sudo mv scripts/ML-VAMPhyRE.py /usr/local/bin/
+	sudo mv scripts/VAMPhyRE-opt.py /usr/local/bin/
 	sudo mv $"bin_${linux}/Treerename" /usr/local/bin/
 	
 	mv $"bin_${linux}" bin
