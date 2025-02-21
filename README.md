@@ -1,4 +1,4 @@
-![] (https://github.com/alfonsomt/vamphyre_tests/Media/vamphyre_logo.jpg)
+![] [https://github.com/alfonsomt/vamphyre_tests/Media/vamphyre_logo.jpg](https://raw.githubusercontent.com/alfonsomt/vamphyre_tests/0104766c106095c3ca1ed067028ae3a91da76073/Media/vamphyre_logo.jpg?token=ALSYAVL242MCEG7IZHVMHD3HXCRDE)
 # VAMPhyRE: Virtual Analysis Method for Phylogenomic fingeRprint Estimation
 ### Virtual Analysis Method for Phylogenomic fingeRprint Estimation
 
