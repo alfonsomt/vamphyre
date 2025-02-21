@@ -1,4 +1,4 @@
-![VAMPhyRE logo] blob/main/Media/vamphyre_logo.jpg
+![VAMPhyRE logo] (https://github.com/alfonsomt/vamphyre_tests/blob/main/Media/vamphyre_logo.jpg)
 # VAMPhyRE: Virtual Analysis Method for Phylogenomic fingeRprint Estimation
 ### Virtual Analysis Method for Phylogenomic fingeRprint Estimation
 
