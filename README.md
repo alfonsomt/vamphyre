@@ -1,5 +1,7 @@
+<p align="center">
 # VAMPhyRE: Virtual Analysis Method for Phylogenomic fingeRprint Estimation
 ### Virtual Analysis Method for Phylogenomic fingeRprint Estimation
+</p>
 
 <p align="center">
   <img src="Media/vamphyre_logo.jpg" alt="Imagen" />
@@ -7,6 +9,7 @@
 
 Repository for the VAMPhyRE Lazarus/Free pascal project
 
+<p align="justify">
 The Virtual Analysis Method for Phylogenomic fingeRprint Estimation (VAMPhyRE) is a bioinformatics technique aimed for whole-genome comparisons and phylogenomic analysis using Virtual Genomic Fingerprints (VGFs). VGFs are calculated by Virtual Hybridization (VH), which is a computational method that searches potential hybridization sites for short probes on genomic sequences.
 
 This search locates potential hybridization sites between genome sequences and the probes in a defined set (The VAMPhyRE probe set), based on the number of complementary bases allowing a defined number of mismatches. Additionally, the program can perform a thermodynamic analysis for predicting the thermal stability of the duplexes formed between probes and potential hybridization sites, which can be used for the development of microarray devices.
@@ -16,6 +19,7 @@ The VAMPhyRE probe sets (VPS) were designed using special criteria to maximize t
 In order to produce highly specific and informative VGFs, the probe set is selected according to the length of the target genome to produce a fingerprint where is expected the hybridization of approximately 50-60% of the probes in the set, while covering most of the target genome.
 
 Genome similarity is then estimated by pairwise comparison of their VGFs, by counting the number of shared homologous hybridization sites. VGFs similarity is reported as distance tables that can be used for calculating phylogenomic trees.
+</p>
 
 ## Installation
 
