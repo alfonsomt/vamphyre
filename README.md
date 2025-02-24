@@ -1,3 +1,4 @@
+![imagen!] (/Media/vamphyre_logo.jpg)
 # VAMPhyRE: Virtual Analysis Method for Phylogenomic fingeRprint Estimation
 ### Virtual Analysis Method for Phylogenomic fingeRprint Estimation
 
@@ -24,8 +25,14 @@ git clone https://github.com/alfonsomt/vamphyre_tests.git
 Execute the next comands
 ```
 cd vamphyre_tests/
+```
+```
 chmod +x Install_VAMPhyRE_test.sh
-sudo ./Install_VAMPhyRE_test.sh
+```
+```
+./Install_VAMPhyRE_test.sh
+```
+```
 export PATH=$HOME/bin:$PATH
 ```
 
@@ -62,10 +69,16 @@ options
 
 **-g**, Directory with genome files, must be in individual files in fasta format. Other formats are not allowed.
 
+###
 ### Test data
 
 In "~/VAMPhyRE_test/" path you will find a directory called "datasets" you can copy them and use for test the VAMPhyRE.py, here is an example of use:
 
+### Optimization
+```
+VAMPhyRE-opt.py -p vps8 -s1 ~/VAMPhyRE_test/datasets/hpv/hpv1.fasta -s2 ~/VAMPhyRE_test/datasets/hpv/hpv2.fasta 
+```
+### Runing
 ```
 VAMPhyRE.py -p vps8 -t 8 -l 5 -r 5 -d 16 -g ~/VAMPhyRE_test/datasets/hpv
 
