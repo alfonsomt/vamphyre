@@ -1,6 +1,9 @@
-![Imagen](Media/vamphyre_logo.jpg)
 # VAMPhyRE: Virtual Analysis Method for Phylogenomic fingeRprint Estimation
 ### Virtual Analysis Method for Phylogenomic fingeRprint Estimation
+
+<p align="center">
+  <img src="Media/vamphyre_logo.jpg" alt="Imagen" />
+</p>
 
 Repository for the VAMPhyRE Lazarus/Free pascal project
 
