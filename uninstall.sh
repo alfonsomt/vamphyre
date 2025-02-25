@@ -10,4 +10,6 @@ sudo rm /usr/local/bin/Treerename
 sudo rm /usr/local/bin/Characters
 sudo rm /usr/local/bin/Dotfinger
 
+source ~/.bashrc  
+
 rm -r $path
