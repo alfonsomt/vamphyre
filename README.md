@@ -19,6 +19,12 @@ In order to produce highly specific and informative VGFs, the probe set is selec
 Genome similarity is then estimated by pairwise comparison of their VGFs, by counting the number of shared homologous hybridization sites. VGFs similarity is reported as distance tables that can be used for calculating phylogenomic trees.
 </div>
 
+## External dependencies 
+You must intall python and biopython library with
+```
+pip install biopython
+```
+
 ## Installation
 
 First, download the repository
