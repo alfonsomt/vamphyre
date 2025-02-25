@@ -9,8 +9,7 @@ Repository for the VAMPhyRE Lazarus/Free pascal project
 
 <div align="justify">
 The Virtual Analysis Method for Phylogenomic fingeRprint Estimation (VAMPhyRE) is a bioinformatics technique aimed for whole-genome comparisons and phylogenomic analysis using Virtual Genomic Fingerprints (VGFs). VGFs are calculated by Virtual Hybridization (VH), which is a computational method that searches potential hybridization sites for short probes on genomic sequences.
-
-
+  
 This search locates potential hybridization sites between genome sequences and the probes in a defined set (The VAMPhyRE probe set), based on the number of complementary bases allowing a defined number of mismatches. Additionally, the program can perform a thermodynamic analysis for predicting the thermal stability of the duplexes formed between probes and potential hybridization sites, which can be used for the development of microarray devices.
 
 The VAMPhyRE probe sets (VPS) were designed using special criteria to maximize the variability of the genomic sequences that can be analyzed and for producing specific hybridization patterns even for closely related genome sequences. The collection of potential hybridization sites in the targets constitutes a hybridization pattern called Virtual Genomic Fingerprint (VGF).
@@ -22,6 +21,7 @@ Genome similarity is then estimated by pairwise comparison of their VGFs, by cou
 
 ## What is VAMPhyRE?
 
+<div align="justify">
 The Virtual Analysis Method for Phylogenomic fingeRprint Estimation (VAMPhyRE) is a bioinformatics technique aimed for whole-genome comparisons and phylogenomic analysis using Virtual Genomic Fingerprints (VGFs). VGFs are calculated by Virtual Hybridization (VH), which is a computational method that searches potential hybridization sites for short probes on genomic sequences. The collection of potential hybridization sites in a target genome constitutes a hybridization pattern called Virtual Genomic Fingerprint (VGF).
 
 VGFs can be used to estimate genome similarity between pairs of genomes. Pairwise genome distances are calculated from the number of homologous sites shared between the VGFs of two genomes to be compared.  Then, a table of distances between pairs of genomes can be used for calculating phylogenomic trees.
