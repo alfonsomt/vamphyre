@@ -57,24 +57,6 @@ VAMPhyRE.py -h
 VAMPhyRE.py --help
 ```
 
-### Usage
-```
-VAMPhyRE.py -p vps8 -t 8 -l 5 -r 5 -d 16 -g genome_dir
-```
-options
-**-p** name of the file that contains the VPS, present in ~/VAMPhyRE/VPS/ path. You can add a file with user kmers as well. 
-
-**-t**, # number of threads.
-
-**-l**, value of left extension.
-
-**-r**, value of right extension.
-
-**-d**, value of threshold.
-
-**-g**, Directory with genome files, must be in individual files in fasta format. Other formats are not allowed.
-
-###
 ### Test data
 
 In "~/VAMPhyRE_test/" path you will find a directory called "datasets" you can copy them and use for test the VAMPhyRE.py, here is an example of use:
@@ -88,6 +70,24 @@ VAMPhyRE-opt.py -p vps8 -s1 ~/VAMPhyRE_test/datasets/hpv/hpv1.fasta -s2 ~/VAMPhy
 VAMPhyRE.py -p vps8 -t 8 -l 5 -r 5 -d 16 -g ~/VAMPhyRE_test/datasets/hpv
 
 ```
+### VAMPhyRE.py options
+**-p** name of the file that contains the VPS, present in ~/VAMPhyRE/VPS/ path. You can add a file with user kmers as well. (mandatory)
+**-s1** path of genome#1 that must be used to optimization (mandatory)
+**-s2** path of genome#2 that must be used to optimization (mandatory)
+**-m** number of optimization mismatch (default = 1) 
+
+### VAMPhyRE.py options
+**-p** name of the file that contains the VPS, present in ~/VAMPhyRE/VPS/ path. You can add a file with user kmers as well. 
+
+**-t**, # number of threads.
+
+**-l**, value of left extension.
+
+**-r**, value of right extension.
+
+**-d**, value of threshold.
+
+**-g**, Directory with genome files, must be in individual files in fasta format. Other formats are not allowed.
 
 
 
