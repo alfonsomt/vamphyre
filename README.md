@@ -59,18 +59,22 @@ VAMPhyRE.py --help
 
 ### Test data
 
-In "~/VAMPhyRE_test/" path you will find a directory called "datasets" you can copy them and use for test the VAMPhyRE.py, here is an example of use:
+In "~/VAMPhyRE_test/" path you will find a directory called "datasets" which is used as test dataset. You can use the following comands to make a test results.
 
 ### Optimization
 ```
 VAMPhyRE-opt.py -p vps8 -s1 ~/VAMPhyRE_test/datasets/hpv/hpv1.fasta -s2 ~/VAMPhyRE_test/datasets/hpv/hpv2.fasta 
 ```
+This script will create a directory with variuos files used in the optimization, the "nslog.txt" file cotain the optimization results. 
+
 ### Runing
 ```
 VAMPhyRE.py -p vps8 -t 8 -l 5 -r 5 -d 16 -g ~/VAMPhyRE_test/datasets/hpv
 
 ```
-### VAMPhyRE.py options
+This script perform the VAMPhyRE metodology.
+
+### VAMPhyRE-opt.py options
 **-p** name of the file that contains the VPS, present in ~/VAMPhyRE/VPS/ path. You can add a file with user kmers as well. (mandatory)
 **-s1** path of genome#1 that must be used to optimization (mandatory)
 **-s2** path of genome#2 that must be used to optimization (mandatory)
@@ -78,17 +82,20 @@ VAMPhyRE.py -p vps8 -t 8 -l 5 -r 5 -d 16 -g ~/VAMPhyRE_test/datasets/hpv
 
 ### VAMPhyRE.py options
 **-p** name of the file that contains the VPS, present in ~/VAMPhyRE/VPS/ path. You can add a file with user kmers as well. 
-
 **-t**, # number of threads.
-
-**-l**, value of left extension.
-
-**-r**, value of right extension.
-
-**-d**, value of threshold.
-
+**-l**, value of left extension, calculated with VAMPhyRE-opt.py
+**-r**, value of right extension, calculated with VAMPhyRE-opt.py
+**-d**, value of threshold, calculated with VAMPhyRE-opt.py
 **-g**, Directory with genome files, must be in individual files in fasta format. Other formats are not allowed.
 
+### Contigs presence
+In case that your genomes contains contigs you must run the following script
+
+```
+prepare_contigs.py -g Genome_dir
+```
+**-g** Genomes directory (default = Genomes)
+**-e** Rile extension of genomes (default = fasta)
 
 
 
