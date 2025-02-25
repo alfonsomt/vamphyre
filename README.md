@@ -41,7 +41,7 @@ chmod +x Install_VAMPhyRE_test.sh
 export PATH=$HOME/bin:$PATH
 ```
 
-## Uninstalling
+## Uninstalling VAMPhyRE
 
 You must go to VAMPhyRE path "~/VAMPhyRE_test/" and execute the following comand:
 
@@ -57,39 +57,52 @@ VAMPhyRE.py -h
 VAMPhyRE.py --help
 ```
 
-### Usage
-```
-VAMPhyRE.py -p vps8 -t 8 -l 5 -r 5 -d 16 -g genome_dir
-```
-options
-**-p** name of the file that contains the VPS, present in ~/VAMPhyRE/VPS/ path. You can add a file with user kmers as well. 
-
-**-t**, # number of threads.
-
-**-l**, value of left extension.
-
-**-r**, value of right extension.
-
-**-d**, value of threshold.
-
-**-g**, Directory with genome files, must be in individual files in fasta format. Other formats are not allowed.
-
-###
 ### Test data
 
-In "~/VAMPhyRE_test/" path you will find a directory called "datasets" you can copy them and use for test the VAMPhyRE.py, here is an example of use:
+In "~/VAMPhyRE_test/" path you will find a directory called "datasets" which is used as test dataset. You can use the following comands to make a test results.
 
-### Optimization
+### Runing VAMPhyRE optimization
 ```
 VAMPhyRE-opt.py -p vps8 -s1 ~/VAMPhyRE_test/datasets/hpv/hpv1.fasta -s2 ~/VAMPhyRE_test/datasets/hpv/hpv2.fasta 
 ```
-### Runing
+This script will create a directory with variuos files used in the optimization, the "nslog.txt" file cotain the optimization results. 
+
+### Runing VAMPhyRE
 ```
 VAMPhyRE.py -p vps8 -t 8 -l 5 -r 5 -d 16 -g ~/VAMPhyRE_test/datasets/hpv
 
 ```
+This script perform the VAMPhyRE metodology.
+
+### VAMPhyRE-opt.py options
+**-p** name of the file that contains the VPS, present in ~/VAMPhyRE/VPS/ path. You can add a file with user kmers as well. (mandatory)
+
+**-s1** path of genome#1 that must be used to optimization (mandatory)
+
+**-s2** path of genome#2 that must be used to optimization (mandatory)
+
+**-m** number of optimization mismatch (default = 1) 
 
 
+### VAMPhyRE.py options
+**-p** name of the file that contains the VPS, present in ~/VAMPhyRE/VPS/ path. You can add a file with user kmers as well. 
 
+**-t**, # number of threads.
 
+**-l**, value of left extension, calculated with VAMPhyRE-opt.py
 
+**-r**, value of right extension, calculated with VAMPhyRE-opt.py
+
+**-d**, value of threshold, calculated with VAMPhyRE-opt.py
+
+**-g**, Directory with genome files, must be in individual files in fasta format. Other formats are not allowed.
+
+### Genomes with contigs
+In case that your genomes contains contigs you must run the following script, before run any other script.
+
+```
+prepare_contigs.py -g Genome_dir
+```
+**-g** Genomes directory (default = Genomes)
+
+**-e** Rile extension of genomes (default = fasta)
