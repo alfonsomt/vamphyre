@@ -6,6 +6,7 @@ from tqdm import tqdm
 import argparse
 import time 
 import shutil
+import sys
 
 vamphyrepath = "~/VAMPhyRE_test/bin"
 
@@ -15,16 +16,18 @@ print('minimal use:\n' +
 parser.add_argument("-p", "--PROBEFILE", type = str, 
                     default = "vps13", metavar = "",
                     help = 'VPS file (default = vps8)')
-parser.add_argument("-s1", "--SEQUENCE1", type = str, 
-                    default = "Genomas/HpGP-ALG-001.fsa", metavar = "",
-                    help = 'set the path to sequence 1')
-parser.add_argument("-s2", "--SEQUENCE2", type = str, 
-                    default = "Genomas/HpGP-ALG-002.fsa", metavar = "",
-                    help = 'set the path to sequence 2')
+parser.add_argument("-s1", "--SEQUENCE1", type = str, metavar = "",
+                    help = 'set the path to sequence 1 (mandatory)')
+parser.add_argument("-s2", "--SEQUENCE2", type = str, metavar = "",
+                    help = 'set the path to sequence 2 (mandatory)')
 parser.add_argument("-m" ,"--MISMATCHES", type = int, 
                     default = 1, metavar = "",
                     help = 'Number of allowed mismatches (default = 1)')
 args = parser.parse_args()
+
+if args.SEQUENCE1 == None:
+    parser.print_help()
+    sys.exit(1)
 
 probefile = os.path.join(os.path.abspath(os.path.expanduser(vamphyrepath[:-3])), 'VPS/', args.PROBEFILE + '.txt')
 probesize = int(args.PROBEFILE[3:])

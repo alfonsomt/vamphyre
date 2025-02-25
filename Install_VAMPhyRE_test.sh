@@ -14,21 +14,25 @@ if [ "$OS" == "Darwin" ]; then
 	sudo mv scripts/prepare_contigs.py /usr/local/bin/
 	sudo mv scripts/ML-VAMPhyRE.py /usr/local/bin/
 	sudo mv scripts/VAMPhyRE-opt.py /usr/local/bin/
-	sudo mv $"bin_${linux}/Treerename" /usr/local/bin/
+	
 	
 	mv $"bin_${mac}" bin
 	sudo chmod +x bin/*
 	sudo xattr -rd com.apple.quarantine bin/*
+	sudo mv bin/Treerename /usr/local/bin/
+	sudo mv bin/Characters /usr/local/bin/
+	sudo mv bin/Dotfinger /usr/local/bin/
 	mv bin $path
 	mv VPS $path
 	mv scripts $path
 	mv uninstall.sh $path
 	mv datasets $path
+	source .bashrc 
 
-	
     rm -r *
     
     echo "VAMPhyRE was installed succesfully"
+    echo "remember to instal biopython with 'pip instal biopython'"
     
 elif [ "$OS" == "Linux" ]; then 
 
@@ -39,18 +43,22 @@ elif [ "$OS" == "Linux" ]; then
 	sudo mv scripts/prepare_contigs.py /usr/local/bin/
 	sudo mv scripts/ML-VAMPhyRE.py /usr/local/bin/
 	sudo mv scripts/VAMPhyRE-opt.py /usr/local/bin/
-	sudo mv $"bin_${linux}/Treerename" /usr/local/bin/
 	
 	mv $"bin_${linux}" bin
 	sudo chmod +x bin/*
+	sudo mv bin/Treerename /usr/local/bin/
+	sudo mv bin/Characters /usr/local/bin/
+	sudo mv bin/Dotfinger /usr/local/bin/
 	mv bin $path 
 	mv VPS $path
 	mv scripts $path
 	mv uninstall.sh $path
 	mv datasets $path
+	source .bashrc 
 
     rm -r *
     
     echo "VAMPhyRE was installed succesfully"
+    echo "remember to instal biopython with 'pip instal biopython'"
     
 fi

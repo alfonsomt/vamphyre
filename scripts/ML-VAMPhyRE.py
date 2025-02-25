@@ -37,6 +37,7 @@ from sklearn.model_selection import learning_curve
 from sklearn.manifold import TSNE
 import seaborn as sns
 import argparse
+import sys
 
 parser = argparse.ArgumentParser()
 print('minimal use:' + '\n' + 'ML-VAMPhyRE.py -f vh_global.csv -m metadatos.csv -c Poblacion -r PCA -t 8 -l MNB')
@@ -73,6 +74,10 @@ parser.add_argument('-normalize', type = str, metavar = '',
                     help = 'normalize data [yes/no]  (default = no)', default = 'no')
 
 var = parser.parse_args()
+
+if var.file == None:
+    parser.print_help()
+    sys.exit(1)
 
 print("\n")
 print('Opciones Selecionadas' +  "\n" +

@@ -49,8 +49,8 @@ parser.add_argument("-r" ,"--RIGHTEXT", type = int, metavar = "", default = 0,
 parser.add_argument("-d" ,"--THRESHOLD", type = int, metavar = "", default = -1,
                     help = 'Threshold (default = -1)')
 
-parser.add_argument("-g", "--GENOMES", type = str, metavar = "", default = 'Genomes',
-                    help = 'Genomes directory  (default = Genomes)')
+parser.add_argument("-g", "--GENOMES", type = str, metavar = "",
+                    help = 'Genomes directory (mandatory)')
                     
 parser.add_argument("-fasta-ext", "--FASTA_EXT", type = str, metavar = "", default = 'fasta',
                     help = 'fasta genomes file extention  (default = fasta)')
@@ -120,6 +120,10 @@ parser.add_argument("-trackext","--TRACKEXT", type = str, metavar = "", default 
 parser.add_argument("-replicates","--REPLICATES", type = int, metavar = "", default = 1,
                     help = 'Number of bootstrap replicates (default = 1)')
 args = parser.parse_args()
+
+if args.GENOMES == None:
+    parser.print_help()
+    sys.exit(1)
 
 if args.PROBEFILE + '.txt' not in os.listdir(os.path.join(os.path.abspath(os.path.expanduser(VAMPhyRE_path)), 'VPS/')):
     print(f"Error: PROBEFILE '{args.PROBEFILE}' is not a valid option" + 

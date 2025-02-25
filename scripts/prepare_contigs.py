@@ -23,13 +23,17 @@ import sys
 parser = argparse.ArgumentParser()
 print('minimal use: ' + '\n' +
       'prepare_contigs -g Genomes')
-parser.add_argument("-g", "--GENOMES", type = str, metavar = "", 
-                    default = 'example_dataset/',
+parser.add_argument("-g", "--GENOMES", type = str, metavar = "",
                     help = 'Genomes directory (default = Genomes)')
 parser.add_argument("-e", "--EXT", type = str, metavar = "", 
                     default = 'fasta',
                     help = 'file extension of genomes (default = fasta)')
 args = parser.parse_args()
+ 
+if args.GENOMES == None:
+    parser.print_help()
+    sys.exit(1)
+
 cmd = os.getcwd()
 listfiles = os.listdir(os.path.join(cmd, args.GENOMES))
 
