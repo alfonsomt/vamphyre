@@ -28,7 +28,7 @@ parser.add_argument("-g", "--GENOMES", type = str, metavar = "",
                     help = 'Genomes directory (default = Genomes)')
 parser.add_argument("-e", "--EXT", type = str, metavar = "", 
                     default = 'fasta',
-                    help = 'file extention of genomes (default = fasta)')
+                    help = 'file extension of genomes (default = fasta)')
 args = parser.parse_args()
 cmd = os.getcwd()
 listfiles = os.listdir(os.path.join(cmd, args.GENOMES))
