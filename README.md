@@ -37,9 +37,6 @@ chmod +x Install_VAMPhyRE_test.sh
 ```
 ./Install_VAMPhyRE_test.sh
 ```
-```
-export PATH=$HOME/bin:$PATH
-```
 
 ## Uninstalling VAMPhyRE
 
