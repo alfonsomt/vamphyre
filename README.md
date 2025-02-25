@@ -24,7 +24,7 @@ Genome similarity is then estimated by pairwise comparison of their VGFs, by cou
 <div align="justify">
 The Virtual Analysis Method for Phylogenomic fingeRprint Estimation (VAMPhyRE) is a bioinformatics technique aimed for whole-genome comparisons and phylogenomic analysis using Virtual Genomic Fingerprints (VGFs). VGFs are calculated by Virtual Hybridization (VH), which is a computational method that searches potential hybridization sites for short probes on genomic sequences. The collection of potential hybridization sites in a target genome constitutes a hybridization pattern called Virtual Genomic Fingerprint (VGF).
 
-VGFs can be used to estimate genome similarity between pairs of genomes. Pairwise genome distances are calculated from the number of homologous sites shared between the VGFs of two genomes to be compared. Then, a table of distances between pairs of genomes can be used for calculating phylogenomic trees.
+VGFs can be used to estimate genome similarity between pairs of genomes. Pairwise genome distances are calculated from the number of homologous sites shared between the VGFs of two genomes to be compared.  Then, a table of distances between pairs of genomes can be used for calculating phylogenomic trees.
 </div>
 
 <div align="center">
