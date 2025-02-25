@@ -27,7 +27,7 @@ if [ "$OS" == "Darwin" ]; then
 	mv scripts $path
 	mv uninstall.sh $path
 	mv datasets $path
-	source .bashrc 
+	source ~/.bashrc 
 
     rm -r *
     
@@ -54,8 +54,8 @@ elif [ "$OS" == "Linux" ]; then
 	mv scripts $path
 	mv uninstall.sh $path
 	mv datasets $path
-	source .bashrc 
-
+	source ~/.bashrc 
+ 
     rm -r *
     
     echo "VAMPhyRE was installed succesfully"
