@@ -76,16 +76,25 @@ This script perform the VAMPhyRE metodology.
 
 ### VAMPhyRE-opt.py options
 **-p** name of the file that contains the VPS, present in ~/VAMPhyRE/VPS/ path. You can add a file with user kmers as well. (mandatory)
+
 **-s1** path of genome#1 that must be used to optimization (mandatory)
+
 **-s2** path of genome#2 that must be used to optimization (mandatory)
+
 **-m** number of optimization mismatch (default = 1) 
+
 
 ### VAMPhyRE.py options
 **-p** name of the file that contains the VPS, present in ~/VAMPhyRE/VPS/ path. You can add a file with user kmers as well. 
+
 **-t**, # number of threads.
+
 **-l**, value of left extension, calculated with VAMPhyRE-opt.py
+
 **-r**, value of right extension, calculated with VAMPhyRE-opt.py
+
 **-d**, value of threshold, calculated with VAMPhyRE-opt.py
+
 **-g**, Directory with genome files, must be in individual files in fasta format. Other formats are not allowed.
 
 ### Contigs presence
@@ -95,8 +104,5 @@ In case that your genomes contains contigs you must run the following script
 prepare_contigs.py -g Genome_dir
 ```
 **-g** Genomes directory (default = Genomes)
+
 **-e** Rile extension of genomes (default = fasta)
-
-
-
-
