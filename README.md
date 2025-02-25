@@ -1,5 +1,5 @@
 <div align="center">
-<img src="Media/Logo_final.png" alt="Imagen" />
+<img src="Media/Logo.png" alt="Imagen" />
 </div>
 
 # VAMPhyRE: Virtual Analysis Method for Phylogenomic fingeRprint Estimation
