@@ -32,7 +32,7 @@ VGFs can be used to estimate genome similarity between pairs of genomes. Pairwis
 </div>
 
 ## External dependencies 
-For the use of the scripts, you must a have python3 installation and then install the biopython library with
+For the use of the scripts, you must have a python3 installation and then install the biopython library with
 ```
 pip install biopython
 ```
