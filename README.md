@@ -61,7 +61,7 @@ chmod +x Install_VAMPhyRE_test.sh
 You must go to VAMPhyRE path "~/VAMPhyRE_test/" and execute the following comand:
 
 ```
-sudo ~/VAMPhyRE_test/uninstall.sh
+~/VAMPhyRE_test/uninstall.sh
 ```
 
 ## Usage
