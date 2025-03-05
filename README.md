@@ -50,6 +50,8 @@ chmod +x Install_VAMPhyRE_test.sh
 ./Install_VAMPhyRE_test.sh
 ```
 
+Now restart terminal.
+
 ## Uninstalling VAMPhyRE
 
 You must go to VAMPhyRE path "~/VAMPhyRE_test/" and execute the following comand:
