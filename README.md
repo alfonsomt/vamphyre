@@ -1,9 +1,9 @@
-<div align="center">
-<img src="Media/Logo.png" alt="Imagen" />
-</div>
-
 # VAMPhyRE: Virtual Analysis Method for Phylogenomic fingeRprint Estimation
 ### Virtual Analysis Method for Phylogenomic fingeRprint Estimation
+
+<div align="center">
+<img src="Media/vamphyre_logo.jpg" alt="Imagen" />
+</div>
 
 Repository for the VAMPhyRE Lazarus/Free pascal project
 
@@ -18,24 +18,6 @@ In order to produce highly specific and informative VGFs, the probe set is selec
 
 Genome similarity is then estimated by pairwise comparison of their VGFs, by counting the number of shared homologous hybridization sites. VGFs similarity is reported as distance tables that can be used for calculating phylogenomic trees.
 </div>
-
-## What is VAMPhyRE?
-
-<div align="justify">
-The Virtual Analysis Method for Phylogenomic fingeRprint Estimation (VAMPhyRE) is a bioinformatics technique aimed for whole-genome comparisons and phylogenomic analysis using Virtual Genomic Fingerprints (VGFs). VGFs are calculated by Virtual Hybridization (VH), which is a computational method that searches potential hybridization sites for short probes on genomic sequences. The collection of potential hybridization sites in a target genome constitutes a hybridization pattern called Virtual Genomic Fingerprint (VGF).
-
-VGFs can be used to estimate genome similarity between pairs of genomes. Pairwise genome distances are calculated from the number of homologous sites shared between the VGFs of two genomes to be compared.  Then, a table of distances between pairs of genomes can be used for calculating phylogenomic trees.
-</div>
-
-<div align="center">
-<img src="Media/Genomica_VAMPhyRE.png" alt="Imagen" />
-</div>
-
-## External dependencies 
-For the use of the scripts, you must have a python3 installation and then install the biopython library with
-```
-pip install biopython
-```
 
 ## Installation
 
@@ -61,7 +43,7 @@ chmod +x Install_VAMPhyRE_test.sh
 You must go to VAMPhyRE path "~/VAMPhyRE_test/" and execute the following comand:
 
 ```
-~/VAMPhyRE_test/uninstall.sh
+sudo ~/VAMPhyRE_test/uninstall.sh
 ```
 
 ## Usage

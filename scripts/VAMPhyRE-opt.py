@@ -8,7 +8,7 @@ import time
 import shutil
 import sys
 
-vamphyrepath = "~/VAMPhyRE_test/bin"
+vamphyrepath = "~/VAMPhyRE/bin"
 
 parser = argparse.ArgumentParser()
 print('minimal use:\n' +

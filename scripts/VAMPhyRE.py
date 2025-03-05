@@ -27,7 +27,7 @@ from tqdm import tqdm
 from Bio import SeqIO
 import pandas as pd
 
-VAMPhyRE_path = '~/VAMPhyRE_test/'
+VAMPhyRE_path = '~/VAMPhyRE/'
 
 inicio = time.time()
 parser = argparse.ArgumentParser()
