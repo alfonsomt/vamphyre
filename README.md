@@ -2,7 +2,7 @@
 ### Virtual Analysis Method for Phylogenomic fingeRprint Estimation
 
 <div align="center">
-<img src="Media/logo.jpg" alt="Imagen" />
+<img src="Media/Logo.jpg" alt="Imagen" />
 </div>
 
 Repository for the VAMPhyRE Lazarus/Free pascal project
