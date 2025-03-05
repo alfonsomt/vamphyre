@@ -1,10 +1,9 @@
-# VAMPhyRE: Virtual Analysis Method for Phylogenomic fingeRprint Estimation
-### Virtual Analysis Method for Phylogenomic fingeRprint Estimation
-
 <div align="center">
 <img src="Media/Logo.png" alt="Imagen" />
 </div>
 
+# VAMPhyRE: Virtual Analysis Method for Phylogenomic fingeRprint Estimation
+### Virtual Analysis Method for Phylogenomic fingeRprint Estimation
 Repository for the VAMPhyRE Lazarus/Free pascal project
 
 <div align="justify">
@@ -43,7 +42,7 @@ chmod +x Install_VAMPhyRE_test.sh
 You must go to VAMPhyRE path "~/VAMPhyRE_test/" and execute the following comand:
 
 ```
-sudo ~/VAMPhyRE_test/uninstall.sh
+~/VAMPhyRE_test/uninstall.sh
 ```
 
 ## Usage
