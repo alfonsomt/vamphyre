@@ -19,7 +19,7 @@ Genome similarity is then estimated by pairwise comparison of their VGFs, by cou
 </div>
 
 ## Installation
-# First steps
+### First steps
 The scripts to VAMPhyRE execution are currently in Python lagunaje, so we highly recommend, to install Python languaje by Python official repository or install anaconda3, we recomend to update the following packages, as well.
 
 ```
@@ -32,7 +32,7 @@ pip install biopython
 pip install scikit-learn
 ```
 
-# Installation of stand alone VAMPhyRE
+### Installation of stand alone VAMPhyRE
 
 First, download the repository
 ```
