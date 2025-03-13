@@ -31,6 +31,10 @@ pip install biopython
 ```
 pip install scikit-learn
 ```
+```
+pip install gensim --upgrade
+```
+
 
 ### Installation of stand alone VAMPhyRE
 
@@ -74,13 +78,13 @@ In "~/VAMPhyRE_test/" path you will find a directory called "datasets" which is 
 
 ### Runing VAMPhyRE optimization
 ```
-VAMPhyRE-opt.py -p vps8 -s1 ~/VAMPhyRE_test/datasets/hpv/hpv1.fasta -s2 ~/VAMPhyRE_test/datasets/hpv/hpv2.fasta 
+VAMPhyRE-opt.py -p vps8 -s1 ~/VAMPhyRE/datasets/hpv/hpv1.fasta -s2 ~/VAMPhyRE/datasets/hpv/hpv2.fasta 
 ```
 This script will create a directory with variuos files used in the optimization, the "nslog.txt" file cotain the optimization results. 
 
 ### Runing VAMPhyRE
 ```
-VAMPhyRE.py -p vps8 -t 8 -l 5 -r 5 -d 16 -g ~/VAMPhyRE_test/datasets/hpv
+VAMPhyRE.py -p vps8 -t 8 -l 5 -r 5 -d 16 -g ~/VAMPhyRE/datasets/hpv
 
 ```
 This script perform the VAMPhyRE metodology.
