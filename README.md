@@ -34,7 +34,9 @@ pip install scikit-learn
 ```
 pip install gensim --upgrade
 ```
-
+```
+pip install --upgrade bottleneck
+```
 
 ### Installation of stand alone VAMPhyRE
 
