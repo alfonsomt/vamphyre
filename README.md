@@ -4,14 +4,14 @@
 
 # VAMPhyRE: Virtual Analysis Method for Phylogenomic fingeRprint Estimation
 ### Virtual Analysis Method for Phylogenomic fingeRprint Estimation
-Repository for the VAMPhyRE Lazarus/Free pascal project
+Repository for the VAMPhyRE suite software distribution
 
 <div align="justify">
 The Virtual Analysis Method for Phylogenomic fingeRprint Estimation (VAMPhyRE) is a bioinformatics technique aimed for whole-genome comparisons and phylogenomic analysis using Virtual Genomic Fingerprints (VGFs). VGFs are calculated by Virtual Hybridization (VH), which is a computational method that searches potential hybridization sites for short probes on genomic sequences.
 
-This search locates potential hybridization sites between genome sequences and the probes in a defined set (The VAMPhyRE probe set), based on the number of complementary bases allowing a defined number of mismatches. Additionally, the program can perform a thermodynamic analysis for predicting the thermal stability of the duplexes formed between probes and potential hybridization sites, which can be used for the development of microarray devices.
+This search locates potential hybridization sites between genome sequences and the probes in a defined set (The VAMPhyRE probe set), based on the number of complementary bases allowing a defined number of mismatches. Additionally, the program can perform a thermodynamic analysis to predict the thermal stability of the duplexes formed between probes and potential hybridization sites, which can be used for the development of microarray devices.
 
-The VAMPhyRE probe sets (VPS) were designed using special criteria to maximize the variability of the genomic sequences that can be analyzed and for producing specific hybridization patterns even for closely related genome sequences. The collection of potential hybridization sites in the targets constitutes a hybridization pattern called Virtual Genomic Fingerprint (VGF).
+The VAMPhyRE probe sets (VPS) were designed using special criteria to maximize the variability of the genomic sequences that can be analyzed and to produce specific hybridization patterns even for closely related genome sequences. The collection of potential hybridization sites in the targets constitutes a hybridization pattern called Virtual Genomic Fingerprint (VGF).
 
 In order to produce highly specific and informative VGFs, the probe set is selected according to the length of the target genome to produce a fingerprint where is expected the hybridization of approximately 50-60% of the probes in the set, while covering most of the target genome.
 
@@ -20,8 +20,7 @@ Genome similarity is then estimated by pairwise comparison of their VGFs, by cou
 
 ## Installation
 ### First steps
-The scripts to VAMPhyRE execution are currently in Python lagunaje, so we highly recommend, to install Python languaje by Python official repository or install anaconda3, we recomend to update the following packages, as well.
-
+The scripts to VAMPhyRE execution are currently in Python language, so we highly recommend installing Python 3, language by Python official repository, or installing Anaconda/Miniconda; we recommend updating the following packages.
 ```
 pip install numpy --upgrade
 ```
