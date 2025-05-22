@@ -102,7 +102,7 @@ This script perform the VAMPhyRE metodology.
 
 
 ### VAMPhyRE.py options
-**-p** name of the file that contains the VPS, present in ~/VAMPhyRE/VPS/ path. You can add a file with user kmers as well. 
+**-p** name of the file that contains the VPS, present in ~/VAMPhyRE/VPS/ path. You can add a file with user-defined kmers as well. 
 
 **-t**, # number of threads.
 
@@ -115,7 +115,7 @@ This script perform the VAMPhyRE metodology.
 **-g**, Directory with genome files, must be in individual files in fasta format. Other formats are not allowed.
 
 ### Genomes with contigs
-In case that your genomes contains contigs you must run the following script, before run any other script.
+In case that your genomes contain contigs you must run the following script, before run any other script.
 
 ```
 prepare_contigs.py -g Genome_dir
