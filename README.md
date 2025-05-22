@@ -37,14 +37,14 @@ pip install gensim --upgrade
 pip install --upgrade bottleneck
 ```
 
-### Installation of stand alone VAMPhyRE
+### Installation of stand-alone VAMPhyRE
 
 First, download the repository
 ```
 git clone https://github.com/alfonsomt/vamphyre_tests.git
 ```
 
-Execute the next comands
+Next, execute the next commands
 ```
 cd vamphyre_tests/
 ```
@@ -55,7 +55,7 @@ chmod +x Install_VAMPhyRE_test.sh
 ./Install_VAMPhyRE_test.sh
 ```
 
-Now restart terminal.
+Now restart the terminal.
 
 ## Uninstalling VAMPhyRE
 
@@ -75,15 +75,15 @@ VAMPhyRE.py --help
 
 ### Test data
 
-In "~/VAMPhyRE_test/" path you will find a directory called "datasets" which is used as test dataset. You can use the following comands to make a test results.
+In "~/VAMPhyRE_test/" path you will find a directory called "datasets" which is used as test dataset. You can use the following commands to generate test results.
 
-### Runing VAMPhyRE optimization
+### Running VAMPhyRE optimization
 ```
 VAMPhyRE-opt.py -p vps8 -s1 ~/VAMPhyRE/datasets/hpv/hpv1.fasta -s2 ~/VAMPhyRE/datasets/hpv/hpv2.fasta 
 ```
 This script will create a directory with variuos files used in the optimization, the "nslog.txt" file cotain the optimization results. 
 
-### Runing VAMPhyRE
+### Running VAMPhyRE
 ```
 VAMPhyRE.py -p vps8 -t 8 -l 5 -r 5 -d 16 -g ~/VAMPhyRE/datasets/hpv
 
@@ -91,7 +91,7 @@ VAMPhyRE.py -p vps8 -t 8 -l 5 -r 5 -d 16 -g ~/VAMPhyRE/datasets/hpv
 This script perform the VAMPhyRE metodology.
 
 ### VAMPhyRE-opt.py options
-**-p** name of the file that contains the VPS, present in ~/VAMPhyRE/VPS/ path. You can add a file with user kmers as well. (mandatory)
+**-p** name of the file that contains the VPS, present in ~/VAMPhyRE/VPS/ path. You can add a file with user-defined kmers as well. (mandatory)
 
 **-s1** path of genome#1 that must be used to optimization (mandatory)
 
