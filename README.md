@@ -41,7 +41,7 @@ pip install --upgrade bottleneck
 
 First, download the repository
 ```
-git clone https://github.com/alfonsomt/vamphyre_tests.git
+git clone https://github.com/alfonsomt/vamphyre.git
 ```
 
 Next, execute the next commands
