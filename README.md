@@ -22,19 +22,7 @@ Genome similarity is then estimated by pairwise comparison of their VGFs, by cou
 ### First steps
 The scripts to VAMPhyRE execution are currently in Python language, so we highly recommend installing Python 3, language by Python official repository, or installing Anaconda/Miniconda; we recommend updating the following packages.
 ```
-pip install numpy --upgrade
-```
-```
-pip install biopython
-```
-```
-pip install scikit-learn
-```
-```
-pip install gensim --upgrade
-```
-```
-pip install --upgrade bottleneck
+pip install pandas bottleneck tqdm numpy biopython scikit-learn gensim
 ```
 
 ### Installation of stand-alone VAMPhyRE
