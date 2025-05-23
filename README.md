@@ -50,7 +50,7 @@ Now restart the terminal.
 You must go to VAMPhyRE path "~/VAMPhyRE_test/" and execute the following comand:
 
 ```
-~/VAMPhyRE/uninstall.sh
+~/VAMPhyRE/Uninstall.sh
 ```
 
 ## Usage
