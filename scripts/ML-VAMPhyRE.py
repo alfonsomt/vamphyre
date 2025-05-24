@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #-------------------------------------------------------------------------------
-# Name:        VAMPhyRE launcher
+# Name:        VAMPhyRE Machine Learning options
 # Purpose:     Automate the pipeline for calculating Virtual Genomic Finger-
 #              prints (VH5cmdl), counts the number of processing cores and 
 #              creates a subprocess for each core, followed by parsing results
@@ -31,6 +31,15 @@ from sklearn.naive_bayes import MultinomialNB as MNB
 from sklearn.linear_model import LogisticRegression as LR 
 from sklearn.tree import DecisionTreeClassifier as DTC
 from sklearn.neural_network import MLPClassifier as NNW
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+#-------------------------------------------------------------------------------
+# Name:        Prepare contigs
+# Purpose:     General Machine Learning analysis
+#
+# Author:       Mario Angel Lopez-Luis
+#-------------------------------------------------------------------------------
+
 import time
 from sklearn.model_selection import cross_val_score
 from sklearn.model_selection import learning_curve

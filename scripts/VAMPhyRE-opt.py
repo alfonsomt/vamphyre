@@ -1,4 +1,27 @@
 #!/usr/bin/env python
+#-------------------------------------------------------------------------------
+# Name:         VAMPhyRE launcher
+# Purpose:      By providing two loosely related sequences, generates a random 
+#               sequence with the randomseq program and compares pairs of sequences 
+#               (original vs. original) and (original vs. randomized), using different 
+#               combinations of extension-threshold with the programs VH5cmdl and VFAT, 
+#               to estimate the best parameters that produce the optimal signal/noise 
+#               ratio (s/n). These are the recommended parameters to maximize both the 
+#               sensitivity and specificity when comparing more related genomes.
+#
+#
+# Author:       Mario Angel Lopez-Luis
+# Contributors: Emmanuel Canizal-Ramos
+#               Francisco Federico Guevara-Roman
+#               José MarÌa Rojas-Calvo
+#
+#	Definition: A contributor typically provides specific inputs or expertise,
+#	while a collaborator actively works alongside others toward a common goal.
+#	A contributor might be an individual who provides resources or knowledge,
+#	like a writer for a publication, while a collaborator participates in a
+#	team or project and contributes to its success.
+#-------------------------------------------------------------------------------
+
 import os
 import subprocess
 import math

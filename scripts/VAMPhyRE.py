@@ -1,18 +1,26 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #-------------------------------------------------------------------------------
-# Name:        VAMPhyRE launcher
-# Purpose:     Automate the pipeline for calculating Virtual Genomic Finger-
-#              prints (VH5cmdl), counts the number of processing cores and 
-#              creates a subprocess for each core, followed by parsing results
-#              and calculation of a global table of hybridization (VHRP) and
-#              comparison of fingerprints for calculation of distances/similarities.
+# Name:         VAMPhyRE launcher
+# Purpose:      Automates the pipeline for calculating Virtual Genomic Fingerprints 
+#               (VGFs) with VH5cmdl binary application. It displays information of 
+#               the number of processing cores and creates a thread (subprocess) for 
+#               each core. When the VGF calculation ends, it calls VHRP binary for 
+#               summarizing the results, and the results and the calculation of a 
+#               global table of hybridization/probe for each genome, and finally, it 
+#               calls VFAT binary for the comparison of fingerprints and the 
+#               calculation of tables of distances or similarities.
 #
-# Author:      Mario Angel Lopez-Luis and Emanuel Canizal
+# Author:       Mario Angel Lopez-Luis
+# Contributors: Emmanuel Canizal-Ramos
+#               Francisco Federico Guevara-Roman
+#               José MarÌa Rojas-Calvo
 #
-# Created:     18/02/2025
-# Copyright:   Alfonso Mendez-Tenorio 2022
-# Licence:     <your licence>
+#	Definition: A contributor typically provides specific inputs or expertise,
+#	while a collaborator actively works alongside others toward a common goal.
+#	A contributor might be an individual who provides resources or knowledge,
+#	like a writer for a publication, while a collaborator participates in a
+#	team or project and contributes to its success.
 #-------------------------------------------------------------------------------
 
 import multiprocessing
