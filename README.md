@@ -34,13 +34,13 @@ git clone https://github.com/alfonsomt/vamphyre.git
 
 Next, execute the next commands
 ```
-cd vamphyre_tests/
+cd vamphyre/
 ```
 ```
-chmod +x Install_VAMPhyRE_test.sh
+chmod +x Install_VAMPhyRE.sh
 ```
 ```
-./Install_VAMPhyRE_test.sh
+./Install_VAMPhyRE.sh
 ```
 
 Now restart the terminal.
@@ -50,7 +50,7 @@ Now restart the terminal.
 You must go to VAMPhyRE path "~/VAMPhyRE_test/" and execute the following comand:
 
 ```
-~/VAMPhyRE_test/uninstall.sh
+~/VAMPhyRE/Uninstall.sh
 ```
 
 ## Usage
