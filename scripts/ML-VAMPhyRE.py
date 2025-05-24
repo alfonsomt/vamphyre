@@ -2,17 +2,9 @@
 # -*- coding: utf-8 -*-
 #-------------------------------------------------------------------------------
 # Name:        VAMPhyRE Machine Learning options
-# Purpose:     Automate the pipeline for calculating Virtual Genomic Finger-
-#              prints (VH5cmdl), counts the number of processing cores and 
-#              creates a subprocess for each core, followed by parsing results
-#              and calculation of a global table of hybridization (VHRP) and
-#              comparison of fingerprints for calculation of distances/similarities.
+# Purpose:     General Machine learning options
 #
 # Author:      Mario Angel Lopez-Luis
-#
-# Created:     18/02/2025
-# Copyright:   Alfonso Mendez-Tenorio 2022
-# Licence:     <your licence>
 #-------------------------------------------------------------------------------
 import pandas as pd
 import numpy as np
