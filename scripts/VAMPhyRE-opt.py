@@ -38,13 +38,13 @@ print('minimal use:\n' +
       'VAMPhyRE-opt.py -p vps8 -s1 path_to_sequence_1 -s2 -s1 path_to_sequence_1 \n')    
 parser.add_argument("-p", "--PROBEFILE", type = str, 
                     default = "vps13", metavar = "",
-                    help = 'VPS file (default = vps8)')
+                    help = 'VPS file (default = vps8')
 parser.add_argument("-s1", "--SEQUENCE1", type = str, metavar = "",
                     help = 'set the path to sequence 1 (mandatory)')
 parser.add_argument("-s2", "--SEQUENCE2", type = str, metavar = "",
                     help = 'set the path to sequence 2 (mandatory)')
 parser.add_argument("-m" ,"--MISMATCHES", type = int, 
-                    default = 1, metavar = "",
+                    default = 0, metavar = "",
                     help = 'Number of allowed mismatches (default = 1)')
 args = parser.parse_args()
 
@@ -53,10 +53,18 @@ if args.SEQUENCE1 == None:
     sys.exit(1)
 
 probefile = os.path.join(os.path.abspath(os.path.expanduser(vamphyrepath[:-3])), 'VPS/', args.PROBEFILE + '.txt')
-probesize = int(args.PROBEFILE[3:])
+with open(probefile, 'r') as file:
+    lineas = list(file.readlines())
+    probesize = int(len(lineas[0][:-1]))
 sequence1 = args.SEQUENCE1
 sequence2 = args.SEQUENCE2
 mismatches = args.MISMATCHES
+print('selected options:')
+print('GENOME 1: ' + sequence1)
+print('GENOME 2: ' + sequence2)
+print('MISMATCHES: ' + str(mismatches))
+print('PROBEFILE: ' + args.PROBEFILE + '.txt')
+print('PROBESIZE: ' + str(probesize) + '\n')
 #------------------------------
 #------------------------------
 #------------------------------
